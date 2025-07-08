@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Irish+Grover&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="content.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class = "contenido">
+        <section class = 'contenido_header'>
+            <dotlottie-player class="dotlottie_header" src="https://lottie.host/b0f0ab0c-6b18-426a-ad01-550aae56487b/qRxJIm6HNb.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+            <div style="z-index: 10;">
+                <h1>¡Feliz</h1>
+                <h1>Cumpleaños!</h1>
+                <p>LO FELICITO POR SER USTED. :D</p>
+            </div>
+            <div class="globo" ></div>
+        </section>
+
+        <section>
+            <div class="icono">
+                <img width="24" height="24" src="https://img.icons8.com/sf-black-filled/64/quote-left.png" alt="quote-left"/>
+            </div>>
+
+            <div class="texto1">
+                <h2>
+                    Espero que este día sea tan especial como tú.
+                </h2>
+                <p>
+                    Esta fue mi forma de decir: me caes bien y ¡que cumplas muchos más!
+                </p>
+                <p>
+                    Escucha... 🫠
+                </p>
+            </div>
+        </section>
+        <!-- <audio controls>
+            <source src="../../music/Maná - Mariposa Traicionera (Video Oficial).mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio> -->
+
+        <section class="reproductor">
+            <h2>Título</h2>
+            <p>Nombre</p>
+            <audio constrols id="cancion">
+                <source src="../../music/Maná - Mariposa Traicionera (Video Oficial).mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progreso"/>
+            <div class="controles">
+                <button class="atras">
+                    <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/back.png" alt="back"/>
+                </button>
+                <button class="play">
+                    <img width="20" height="20" src="https://img.icons8.com/sf-black-filled/64/play.png" alt="play"/>
+                </button>
+                <button class="adelante">
+                    <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/forward--v1.png" alt="forward--v1"/>
+                </button>
+            </div>
+        </section>
+
+        <section class="texto2">
+            <div class="icono">
+                <img width="24" height="24" src="https://img.icons8.com/sf-black-filled/64/quote-left.png" alt="quote-left"/>
+            </div>
+            <h2>
+                Ojalá te haya sacado una sonrisa en tu día
+            </h2>
+            <dotlottie-player
+                src="https://lottie.host/8aeb25bf-e0dd-4044-8ad6-1c1cb10f1fb8/9YzNttzCGp.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 200px; height: 200px"
+                loop
+                autoplay
+            ></dotlottie-player>
+        </section>
+
+        <section class="contenido_regalo">
+            <h2>¿Y el regalo?</h2>
+            <dotlottie-player
+                src="https://lottie.host/8461c7ab-3579-432a-8e48-053880ed1735/5SaPOoFjnp.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+            >
+            </dotlottie-player>
+
+            <div class="texto_regalo">
+                <button id="btnRegalo" class="boton_regalo_aceptar">
+                    Quiero mi regalo
+                </button>
+                <button id="btnNoRegalo" class="boton_regalo_rechazar">
+                    No quiero nada
+                </button>
+            </div>
+        </section>
+
+        <dialog id="regalo">
+            <h2>¡Feliz cumpleaños!</h2>
+            <p>Te has ganado un cupon para ir conmigo a cine 🎬🎞️🍿</p>
+            <img src="../../images/chill guy.jpg" alt="Perro chill guy" width="200">
+
+        </dialog>
+
+        <dialog id="noRegalo">
+            <h2>Sí lo quieres</h2>
+            <img src="../../images/perro_cuchillo.jpg" alt="Perro con cuchillo" width="200">
+
+
+        </dialog>
+
+
+    </main>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="script.js"></script>
+    <script src="reproductor.js"></script>
+</body>
+</html>
